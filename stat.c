@@ -13,11 +13,11 @@ int main(){
   if (fileStat.st_size < 1024)
     printf("File Size:\t\t%d bytes\n",fileStat.st_size);
   else if (fileStat.st_size < 1048576)
-    printf("File Size: \t\t%d kilobytes %d bytes", fileStat.st_size/1024, fileStat.st_size%1024);
+    printf("File Size: \t\t%d kilobytes %d bytes\n", fileStat.st_size/1024, fileStat.st_size%1024);
   else if (fileStat.st_size < 1073741824)
-    printf("File Size: \t\t%d megabytes %d killobytes", fileStat.st_size/1048576, fileStat.st_size%1048576);
+    printf("File Size: \t\t%d megabytes %d killobytes\n", fileStat.st_size/1048576, fileStat.st_size%1048576);
   else
-    printf("File Size: \t\t%d gigabytes %d megabytes", fileStat.st_size/1073741824, fileStat.st_size%1073741824);
+    printf("File Size: \t\t%d gigabytes %d megabytes\n", fileStat.st_size/1073741824, fileStat.st_size%1073741824);
   printf("Time of last access:\t%d\n", fileStat.st_atime);
 
   printf("File Permissions: \t");
