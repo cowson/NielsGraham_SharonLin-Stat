@@ -10,8 +10,8 @@ int main(){
 
   printf("Information for %s\n", "test.txt");
   printf("---------------------------\n");
-  printf("File Size: \t\t%d bytes\n",fileStat.st_size);
-  printf("Time of last access: \t\t %d\n", fileStat.st_atime);
+  printf("File Size:\t\t%d bytes\n",fileStat.st_size);
+  printf("Time of last access:\t%d\n", fileStat.st_atime);
 
   printf("File Permissions: \t");
   printf( (S_ISDIR(fileStat.st_mode)) ? "d" : "-");
